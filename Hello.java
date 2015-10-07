@@ -1,11 +1,10 @@
-
 import javax.swing.JOptionPane;
 
 public class Assignment3 {
 	public enum AccountType {
 		Admin, Student, Staff
 	};
-
+    //public static final int MAX_ITEMS = 0;
 	public static void main(String[] args) {
 
 		AccountType[] choices = { AccountType.Admin, AccountType.Staff, AccountType.Student };
@@ -13,12 +12,16 @@ public class Assignment3 {
 		String TrueUser, TruePassword, password, TrueUserPass, user;
 		TrueUser = ("name");
 		TruePassword = ("password");
-
+        
 		TrueUserPass = (TrueUser + TruePassword);
 		TrueUserPass.equals(AccountType.Admin);
 		user = JOptionPane.showInputDialog("Input your Username");
-
+        //while (TrueUserPass == (user + password) {
+		//insert smart way of fixing things
 		while (user != TrueUser) {
+			user = JOptionPane.showInputDialog("Invalid Username");
+			break;
+		    }
 
 			if (user.equals(TrueUser)) {
 
@@ -51,9 +54,9 @@ public class Assignment3 {
 					password = JOptionPane.showInputDialog("Incorrect password, please Input your password");
 				}
 			} else {
-				user = JOptionPane.showInputDialog("incorrect username, please Input your Username");
+				user = JOptionPane.showInputDialog("Invalid Username");
 
 			}
 		}
 	}
-}
+
