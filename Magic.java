@@ -84,14 +84,14 @@ public class Assignment333 {
 							break;
 						default:
 						}
-						if (select.equals(AccountType.Admin)); {
-							Legitimacy = (Legitimacy+1);
-							JOptionPane.showMessageDialog(null, "Welcome Staff! You can update, read, add, delete file.");
-						}
+						//if (select.equals(AccountType.Admin)); {
+						//	Legitimacy = (Legitimacy+1);
+						//	JOptionPane.showMessageDialog(null, "Welcome Staff! You can update, read, add, delete file.");
+						//}
 							
 						
 
-						/**if (select.equals(AccountType.Admin)) {
+						if (select.equals(AccountType.Admin)) {
 							Legitimacy = (Legitimacy+1);
 							JOptionPane.showMessageDialog(null, "Welcome Staff! You can update, read, add, delete file.");
 							break;
@@ -128,7 +128,7 @@ public class Assignment333 {
 								}
 							}
 							}
-							}*/
+							}
 					}else {
 							}	
 					
